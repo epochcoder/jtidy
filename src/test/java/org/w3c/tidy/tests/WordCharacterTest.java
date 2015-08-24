@@ -42,7 +42,11 @@ public class WordCharacterTest {
         // ensure doctype
         this.tidy.setDocType("auto");
 
-        //tidy.setShowWarnings(true);
+        this.tidy.setWord2000(true);
+        this.tidy.setMakeBare(true);
+        //this.tidy.setWraplen(0); // if wrapping is enabled it creates our issue.... disable by setting 0
+
+        this.tidy.setShowWarnings(true);
         this.tidy.setSmartIndent(true);
         this.tidy.setMessageListener(new TidyMessageListener() {
             @Override

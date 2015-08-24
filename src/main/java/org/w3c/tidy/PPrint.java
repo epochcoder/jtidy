@@ -380,6 +380,7 @@ public class PPrint
             }
 
             q = wraphere;
+            // possible issue!!! Willie
             addC('\0', linelen);
 
             while (true)
@@ -1836,7 +1837,7 @@ public class PPrint
 
     /**
      * Print script and style elements. For XHTML, wrap the content as follows:
-     * 
+     *
      * <pre>
      *     JavaScript:
      *         //&lt;![CDATA[
@@ -1855,7 +1856,7 @@ public class PPrint
      *             content
      *         ]]>
      * </pre>
-     * 
+     *
      * @param fout
      * @param mode
      * @param indent
